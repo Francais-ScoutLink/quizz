@@ -46,6 +46,8 @@ proc join:greet {nick host hand chan} {
         putnotc $nick "Bonjour et bienvenue $nick!  Je suis $botnick, le robot du quizz de #francais-jeux."
         if { "$chan" != "#francais-jeux" } {
             putnotc $nick "Merci de respecter le fait que ce canal parle uniquement Français | Thank you to respect the fact that this channel only speaks French | Vous pouvez venir tester vos connaisence des scout sur notre canal /join #francais-jeux"
+        } else {
+            putnotc $nick "Pour démarer le quizz taper !quizz"
         }
     }
 }
