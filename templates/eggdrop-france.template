@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Statistiques du canal &CHANNAME& - Par Atlantis Stats v0.3 - Auteur: Merwin</title>
+<style type="text/css">
+<!--
+html, body {
+	width: 750px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: medium;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.stats_title {
+	border: 1px solid white;
+	padding: 2px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.stats_item, .stats_item_light {
+	border: 1px solid white;
+	background-color: #F4F4F4;
+}
+
+.stats_item_light {
+	background-color: #EAF0F7;
+}
+
+.stats_num, .stats_num_light {
+	font-weight: bold;
+	padding-right: 4px;
+	background-color: #F4F4F4;
+	border: 1px solid white;
+}
+
+.stats_num_light {
+	background-color: #EAF0F7;
+}
+
+.stats_divers, .stats_divers_title {
+	border: 1px solid white;
+	background-color: #EAF0F7;
+}
+
+.stats_divers_title {
+	background-color: #F4F4F4;
+	text-align: center;
+	font-weight: bold;
+}
+
+acronym {
+	border-bottom: 1px dashed #000066;
+}
+
+h4 {
+	border-top: 1px dashed gray;
+	border-bottom: 1px dashed gray;
+}
+
+h3 {
+	text-align: center;
+	color:#003399;
+}
+
+p.footer {
+	font-size: small;
+}
+
+-->
+</style>
+</head>
+
+<body>
+<h3>Statistiques du canal &CHANNAME&</h3>
+<h4>Top30 des utilisateurs du canal</h4>
+&STATSTABLE&
+<h4>Informations sur le canal </h4>
+<p><acronym>Modes du canal:</acronym></p>
+<blockquote>
+  <font face="Courier New, Courier, mono"> &CHANMODES&</font>
+</blockquote>
+<p><acronym>Sujet du canal:</acronym></p>
+<blockquote>
+  <p><font face="Courier New, Courier, mono"> &CHANTOPIC&</font></p>
+</blockquote>
+<p><acronym>Liste des utlisateurs connect&eacute;s (<strong>&NUMUSERS&</strong> actuellement):</acronym></p>
+<p>&USERSTABLE&</p>
+<p align="center" class="footer">Statistiques par <a href="http://www.eggdrop-france.net">Atlantis Stats v&STATSVER&</a> - Auteur: &STATSAUTHOR&  - Générée le &DATE& à &TIME&</p>
+</body>
+</html>
