@@ -160,7 +160,7 @@ namespace eval ::Oracle {
 	variable oracleauth "-|-"
 
 	# Activer le contrôle de flood ? (0 = désactivé / 1 = activé)
-	variable antiflood 1
+	variable antiflood 0
 
 	# Seuil de déclenchement de l'antiflood.
 	# Exemple : "6:60" = 6 requêtes maximum en 60 secondes.

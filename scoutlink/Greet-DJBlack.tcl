@@ -17,14 +17,14 @@
 # 
 ##### GENERAL SETTINGS ####
 # EDIT the channel names or REMOVE one or two depending on which channel you intend the bot the advertise
-set channel "#francais01 #francais02 #francais03 #francais04"
+set channel "#francais #francais01 #francais02 #francais03 #francais04"
 
 # Edit the time cycle which is in minutes format depending on the time intervals you want the bot to flow out the advertisment
 set time 15
 
 # EDIT the text or REMOVE or ADD lines including inverted commas at the starting and ending at each line 
 set text {
-    "\00303venez vous défié à notre super quizz sur notre canal /join #francais-jeux | Merci de respecter le fait que ce canal parle uniquement Français | Thank you to respect the fact that this channel only speaks French"
+    "\00303venez vous défié à notre super quizz sur notre canal \00310/join #francais-jeux \00312| \0034Merci de respecter le fait que ce canal parle uniquement Français \00312| \00303Thank you to respect the fact that this channel only speaks French"
 }
 
 
@@ -63,7 +63,7 @@ proc msg_pmsg {nick uhost hand chan args} {
             }
     }
 }
-putlog "\002 Script DJBlack chargement réusis\002"
+putlog "\[Bot-Pixel\] ** Script DJBlack chargement réusis **"
 if {[string compare [string index $time 0] "!"] == 0} { set timer [string range $time 1 end] } { set timer [expr $time * 60] }
 if {[lsearch -glob [utimers] "* go *"] == -1} { utimer $timer go }
 
@@ -75,8 +75,9 @@ proc go {} {
 if {[lsearch -glob [utimers] "* go *"] == -1} { utimer $timer go }
 }
 
-putlog "\002Loaded Auto-ADV script by JingYou @ Galaxynet #JingYou (v.4 13nov03)\002"
-
+putlog "\[Bot-Pixel\] ** Loaded Auto-ADV script by JingYou @ Galaxynet #JingYou (v.4 13nov03) - DJBlack **"
+putlog "\[Bot-Pixel\] ** Activé : $channel"
+putlog "\[Bot-Pixel\] ** Loaded Greet (DLF) - DJBlack **"
 ##########################################################################
 # join:greet end                                                         #
 ##########################################################################
@@ -86,7 +87,7 @@ putlog "\002Loaded Auto-ADV script by JingYou @ Galaxynet #JingYou (v.4 13nov03)
 # putlog                                                                 #
 ##########################################################################
 
-putlog "Loaded Greet (DLF)"
+
 
 ##########################################################################
 # auto adv                                                               #
